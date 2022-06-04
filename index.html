@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> + </title>
+		<style type="text/css">
+			.container {
+				width: 1000px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		<h1 id="h1Text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</h1>
+		<div class="fLex" style="display: flex;">
+		<ul id="ulLi">
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+			<li>four</li>
+			<li>five</li>
+			<li>six</li>
+			<li>seven</li>
+			<li>eight</li>
+			<li>nine</li>
+			<li>ten</li>
+		</ul>
+		<p id="pText" style="padding-left: 100px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	  </div>
+	  <button onclick="aMinus()"> A- </button>
+	  <button onclick="aPlus()"> A+ </button>
+		</div>
+		<script type="text/javascript">
+			let a = 16
+			function aMinus() {
+				a--
+				let minusOne = document.getElementById(`h1Text`)
+				let minusTwo = document.getElementById(`ulLi`)
+				let minusThree = document.getElementById(`pText`)
+				minusOne.style.fontSize = a+`px`
+				minusTwo.style.fontSize = a+`px`
+				minusThree.style.fontSize = a+`px`
+			}
+			function aPlus() {
+				a++
+				let minusOne = document.getElementById(`h1Text`)
+				let minusTwo = document.getElementById(`ulLi`)
+				let minusThree = document.getElementById(`pText`)
+				minusOne.style.fontSize = a+`px`
+				minusTwo.style.fontSize = a+`px`
+				minusThree.style.fontSize = a+`px`
+			}
+		</script>
+	</body>
+</html>
